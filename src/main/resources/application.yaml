@@ -1,0 +1,30 @@
+
+#spring:
+#  data:
+#    mongodb:
+#      authentication-database: test
+#      username: user
+#      password: pass
+#      database: test
+#      port: 27017
+#      host: localhost
+
+spring:
+  data:
+    mongodb:
+      authentication-database: prod
+      username: prod_user
+      password: prod_pass
+      database: prod
+      port: 27017
+      host: localhost
+
+
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # 1 day
+      refresh-token:
+        expiration: 604800000 # 7 days
+
